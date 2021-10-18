@@ -6,9 +6,9 @@ RUN apk --update add wget \
 		     openssh \
 		     mysql-client \
 		     php8 \
-#		     php8-curl \
+		     php8-curl \
 		     php8-openssl \
-#		     php8-iconv \
+		     php8-iconv \
 		     php8-mbstring \
 		     php8-phar \
 		     php8-pdo_mysql \
@@ -16,7 +16,9 @@ RUN apk --update add wget \
 		     php8-ctype \
 		     php8-fileinfo \
 		     php8-tokenizer \
-		     php8-xml
+		     php8-xml \
+		     php8-dom \
+		     php8-simplexml
 
 RUN ln -s /usr/bin/php8 /usr/bin/php
 
